@@ -1,0 +1,22 @@
+{
+  "name": "tdd_katas",
+  "version": "1.0.0",
+  "description": "katas to practice some test driven development",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pboyle17/tdd_katas.git"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "pboyle17",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
