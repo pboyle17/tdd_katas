@@ -74,7 +74,13 @@ function getNumberDigitOnesPlace (string){
 }
 
 function sum(arr){
-  return true;
+  var sum=0;
+
+  arr.forEach(function(number){
+    sum+=number
+  })
+
+  return sum;
 }
 
 function convertMultipleDigitStringToNumber (string){
@@ -82,18 +88,19 @@ function convertMultipleDigitStringToNumber (string){
   var count = digits.length;
   var number = digits.map(function(digit){
     if(count == 2){
+      count--;
       return getNumberDigitTensPlace(digit);
     }
-    if(count ==1){
-      return getNumberDigitTensPlace(digit)
+    if(count == 1){
+      count--;
+      return getNumberDigitOnesPlace(digit)
     }
 
-    count--
   });
 
+  var converted = sum(number);
 
-
-  return false;
+  return converted;
 }
 
 module.exports.sum = sum;

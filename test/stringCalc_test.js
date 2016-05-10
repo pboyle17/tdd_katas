@@ -50,8 +50,12 @@ describe('getNumberDigitOnesPlace',function(){
 describe('sum',function(){
   var sum = require('../methods/calc_methods').sum;
 
-  it('should return true',function(){
+  it('should return 3 for the input array [1,2]',function(){
     expect(sum([1,2])).to.equal(3);
+  });
+
+  it('should return 45 for the input array [1,2,20,12]',function(){
+    expect(sum([1,2,30,12])).to.equal(45);
   });
 });
 
